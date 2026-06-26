@@ -1,15 +1,14 @@
 
-# 🩺 GlucoseGuard-PK
+🩺 GlucoseGuard-PK
 
-## 🇵🇰 Diabetes Risk Prediction for Pakistan
+ 🇵🇰 Diabetes Risk Prediction for Pakistan
 
 GlucoseGuard-PK is a machine learning web application that predicts whether a person is at risk of diabetes based on health indicators.
 
 The project was developed using the CDC BRFSS health dataset and multiple machine learning algorithms. The best-performing model was deployed using Streamlit to provide an interactive prediction interface.
 
----
 
-# 🚀 Features
+🚀 Features
 
 - Predicts diabetes risk instantly
 - Interactive Streamlit web application
@@ -17,11 +16,9 @@ The project was developed using the CDC BRFSS health dataset and multiple machin
 - SHAP explainability for model interpretation
 - Clean and user-friendly interface
 
----
 
-# 📂 Project Structure
+📂 Project Structure
 
-```
 glucoseguard-pk/
 │
 ├── app/
@@ -44,11 +41,8 @@ glucoseguard-pk/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
 
----
-
-# 🧠 Machine Learning Workflow
+🧠 Machine Learning Workflow
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
@@ -58,9 +52,8 @@ glucoseguard-pk/
 - SHAP Explainability
 - Streamlit Deployment
 
----
 
-# 📊 Technologies Used
+📊 Technologies Used
 
 - Python
 - Pandas
@@ -73,15 +66,14 @@ glucoseguard-pk/
 - Matplotlib
 - Seaborn
 
----
 
-# ⚙️ Installation
+⚙️ Installation
 
 Clone the repository:
 
-```bash
+bash
 git clone https://github.com/amnaaashraf/glucoseguard-pk.git
-```
+
 
 Go inside the project:
 
@@ -101,9 +93,7 @@ Run the application:
 streamlit run app/app.py
 ```
 
----
-
-# 📈 Model Output
+ 📈 Model Output
 
 The application predicts whether a patient is:
 
@@ -112,9 +102,9 @@ The application predicts whether a patient is:
 
 along with the prediction probability.
 
----
 
-# 📷 Project Screenshots
+
+📷 Project Screenshots
 
 Add screenshots here after deployment.
 
@@ -126,7 +116,7 @@ Example:
 
 ---
 
-# 👩‍💻 Author
+👩‍💻 Author
 
 **Amna Ashraf**
 
