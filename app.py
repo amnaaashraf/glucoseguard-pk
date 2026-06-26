@@ -191,8 +191,8 @@ div[data-testid="stSidebar"] * {
 """, unsafe_allow_html=True)
 
 # Load model
-model = joblib.load('../models/glucoseguard_model.pkl')
-explainer = joblib.load('../models/shap_explainer.pkl')
+model = joblib.load('models/glucoseguard_model.pkl')
+explainer = joblib.load('models/shap_explainer.pkl')
 
 # Top Banner
 st.markdown("""
