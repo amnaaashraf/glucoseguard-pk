@@ -1,1 +1,140 @@
 
+# 🩺 GlucoseGuard-PK
+
+## 🇵🇰 Diabetes Risk Prediction for Pakistan
+
+GlucoseGuard-PK is a machine learning web application that predicts whether a person is at risk of diabetes based on health indicators.
+
+The project was developed using the CDC BRFSS health dataset and multiple machine learning algorithms. The best-performing model was deployed using Streamlit to provide an interactive prediction interface.
+
+---
+
+# 🚀 Features
+
+- Predicts diabetes risk instantly
+- Interactive Streamlit web application
+- Machine Learning model trained using health indicators
+- SHAP explainability for model interpretation
+- Clean and user-friendly interface
+
+---
+
+# 📂 Project Structure
+
+```
+glucoseguard-pk/
+│
+├── app/
+│   └── app.py
+│
+├── data/
+│   ├── diabetes_012_health_indicators_BRFSS2015.csv
+│   └── diabetes_binary_5050split_health_indicators_BRFSS2015.csv
+│
+├── models/
+│   ├── glucoseguard_model.pkl
+│   ├── feature_names.pkl
+│   ├── shap_explainer.pkl
+│
+├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── 02_model.ipynb
+│   └── 03_shap.ipynb
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🧠 Machine Learning Workflow
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- SHAP Explainability
+- Streamlit Deployment
+
+---
+
+# 📊 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- SHAP
+- Joblib
+- Streamlit
+- Matplotlib
+- Seaborn
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/amnaaashraf/glucoseguard-pk.git
+```
+
+Go inside the project:
+
+```bash
+cd glucoseguard-pk
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app/app.py
+```
+
+---
+
+# 📈 Model Output
+
+The application predicts whether a patient is:
+
+- Non-Diabetic
+- At Risk of Diabetes
+
+along with the prediction probability.
+
+---
+
+# 📷 Project Screenshots
+
+Add screenshots here after deployment.
+
+Example:
+
+- Home Page
+- Prediction Result
+- SHAP Feature Importance
+
+---
+
+# 👩‍💻 Author
+
+**Amna Ashraf**
+
+GitHub:
+https://github.com/amnaaashraf
+
+---
+
+# ⭐ Repository
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
