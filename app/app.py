@@ -501,7 +501,7 @@ def generate_pdf(name, risk_pct, risk_level, action, drivers):
 if "Single" in mode:
     st.markdown('<div class="section-card"><div class="section-title">👤 Single Patient Screening</div>', unsafe_allow_html=True)
     patient_name = st.text_input("Patient Name or ID", placeholder="e.g. Patient 001 or Ali Hassan")
-    inputs = patient_form(prefix="_single")
+    inputs = patient_form(prefix="")
     st.markdown("</div>", unsafe_allow_html=True)
 
     if st.button("🔍 Assess Diabetes Risk", type="primary"):
