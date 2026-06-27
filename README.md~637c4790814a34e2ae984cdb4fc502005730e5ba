@@ -1,123 +1,74 @@
 # 🩺 GlucoseGuard PK
 
-## AI-Assisted Diabetes Triage & Referral Support System for Pakistan
+<h2>AI-Assisted Diabetes Triage & Referral Support System for Pakistan</h2>
 
-![Python](https://img.shields.io/badge/Python-3.14-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red) ![Status](https://img.shields.io/badge/Status-Live-brightgreen) ![ML](https://img.shields.io/badge/Model-Logistic%20Regression-green)
+<p>
+<img src="https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python"/>
+<img src="https://img.shields.io/badge/Streamlit-Live-red?style=for-the-badge&logo=streamlit"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ML-Logistic%20Regression-orange?style=for-the-badge"/>
+</p>
 
----
+<br>
 
-## 🌍 The Problem
+> 🇵🇰 Built for community health workers and NGO screening camps across Pakistan.
 
-Pakistan has **33 million diabetics** — the **3rd highest in the world.**
-
-Over **50% remain undiagnosed.**
-
-Community health workers running rural screening camps have no fast intelligent triage tool. They screen hundreds of patients manually with no way to prioritize who needs urgent referral.
-
-**GlucoseGuard PK changes that.**
-
----
-
-## 🩺 What It Does
-
-GlucoseGuard PK is a Machine Learning web application designed for community health workers and NGO screening camps across Pakistan.
-
-| Feature | Description |
-|--------|-------------|
-| 🎯 Risk Prediction | Instant diabetes risk score (%) from basic health indicators |
-| 🟢🟡🔴 Risk Classification | Clear Low / Medium / High risk levels |
-| 🔍 SHAP Explainability | Top 5 risk drivers explained in plain language |
-| 📋 Referral Guidance | Lifestyle advice / Retest / Refer for HbA1c |
-| 👥 Population Summary | Camp-level screening insights for NGOs |
+<br>
 
 ---
 
-## 📊 Machine Learning Pipeline
+<h2>🌍 The Problem</h2>
 
-| Stage | Details |
-|-------|---------|
-| Dataset | CDC BRFSS 2015 — 80,000+ health records |
-| Models Evaluated | Logistic Regression, Random Forest, XGBoost |
-| Selected Model | Logistic Regression |
-| Key Metric | Diabetic Recall: **76%** |
-| Class Imbalance | Handled with SMOTE |
-| Explainability | SHAP LinearExplainer |
-| Deployment | Streamlit Cloud |
-
-### 🤔 Why Logistic Regression?
-
-For a health screening tool, **missing a diabetic patient is dangerous.**
-
-Logistic Regression achieved **76% recall on diabetic cases** compared to XGBoost's 18% — making it the clinically safer choice for triage support.
+<p>Pakistan has <strong>33 million diabetics</strong> — the <strong>3rd highest in the world.</strong><br>
+Over <strong>50% remain undiagnosed.</strong><br><br>
+Community health workers running rural screening camps have no fast intelligent triage tool.
+They screen hundreds of patients manually with no way to prioritize who needs urgent referral.<br><br>
+<strong>GlucoseGuard PK changes that.</strong></p>
 
 ---
 
-## 🚀 Live Demo
+<h2>🩺 What It Does</h2>
 
-### 👉 [Try GlucoseGuard PK Live](https://glucoseguard-pk.streamlit.app)
-
----
-
-## 🗂️ Project Structure
-
-glucoseguard-pk/
-│
-├── 📁 app/
-│   └── app.py                    Streamlit web application
-│
-├── 📁 models/
-│   ├── glucoseguard_model.pkl    Trained ML model
-│   ├── shap_explainer.pkl        SHAP explainer object
-│   └── feature_names.pkl         Feature names list
-│
-├── 📁 notebooks/
-│   ├── 01_eda.ipynb              Exploratory Data Analysis
-│   ├── 02_model.ipynb            Model training & evaluation
-│   └── 03_shap.ipynb             SHAP explainability
-│
-├── requirements.txt
-└── README.md
-
+<table>
+  <tr><th>Feature</th><th>Description</th></tr>
+  <tr><td>🎯 Risk Prediction</td><td>Instant diabetes risk score from basic health indicators</td></tr>
+  <tr><td>🟢🟡🔴 Risk Levels</td><td>Clear Low / Medium / High classification</td></tr>
+  <tr><td>🔍 SHAP Explainability</td><td>Top 5 risk drivers explained in plain language</td></tr>
+  <tr><td>📋 Referral Guidance</td><td>Lifestyle advice / Retest / Refer for HbA1c</td></tr>
+  <tr><td>👥 Population Summary</td><td>Camp-level screening insights for NGO health workers</td></tr>
+</table>
 
 ---
 
-## 🛠️ Tech Stack
+<h2>📊 Machine Learning Pipeline</h2>
 
-| Category | Tools |
-|----------|-------|
-| Language | Python 3.14 |
-| ML | Scikit-learn, XGBoost, Imbalanced-learn |
-| Explainability | SHAP |
-| Data | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| App & Deployment | Streamlit Cloud |
+<table>
+  <tr><th>Stage</th><th>Details</th></tr>
+  <tr><td>Dataset</td><td>CDC BRFSS 2015 — 80,000+ health records</td></tr>
+  <tr><td>Models Evaluated</td><td>Logistic Regression, Random Forest, XGBoost</td></tr>
+  <tr><td>Selected Model</td><td>Logistic Regression</td></tr>
+  <tr><td>Diabetic Recall</td><td><strong>76%</strong></td></tr>
+  <tr><td>ROC-AUC Score</td><td><strong>0.81</strong></td></tr>
+  <tr><td>Class Imbalance</td><td>Handled with SMOTE</td></tr>
+  <tr><td>Explainability</td><td>SHAP LinearExplainer</td></tr>
+  <tr><td>Deployment</td><td>Streamlit Cloud</td></tr>
+</table>
+
+<br>
+
+<h3>🤔 Why Logistic Regression?</h3>
+
+<p>For a health screening tool, <strong>missing a diabetic patient is dangerous.</strong><br><br>
+Logistic Regression achieved <strong>76% recall on diabetic cases</strong> compared to XGBoost's 18% —
+making it the clinically safer and more responsible choice for community triage support.</p>
 
 ---
 
-## ⚙️ Run Locally
+<h2>🚀 Live Demo</h2>
 
-```bash
-# Clone the repo
-git clone https://github.com/amnaaashraf/glucoseguard-pk.git
+<h3><a href="https://glucoseguard-pk.streamlit.app">👉 Try GlucoseGuard PK Live Here</a></h3>
 
-# Go into the folder
-cd glucoseguard-pk
+---
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-streamlit run app/app.py
-
-⚠️ Disclaimer
-
-This tool is designed for screening and triage support only.
-It does not replace professional clinical diagnosis or medical advice.
-Always refer high-risk patients to a qualified healthcare professional.
-
-👩‍💻 Author
-
-Amna Ashraf
-
-MSBA Student | Data & Analytics Enthusiast
+<h2>🗂️ Project Structure</h2>
 
