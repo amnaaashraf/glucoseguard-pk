@@ -1,130 +1,107 @@
+# 🩺 GlucoseGuard PK
+### AI-Assisted Diabetes Triage & Referral Support System for Pakistan
 
-🩺 GlucoseGuard-PK
+![Python](https://img.shields.io/badge/Python-3.14-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![ML](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-green)
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
 
- 🇵🇰 Diabetes Risk Prediction for Pakistan
-
-GlucoseGuard-PK is a machine learning web application that predicts whether a person is at risk of diabetes based on health indicators.
-
-The project was developed using the CDC BRFSS health dataset and multiple machine learning algorithms. The best-performing model was deployed using Streamlit to provide an interactive prediction interface.
-
-
-🚀 Features
-
-- Predicts diabetes risk instantly
-- Interactive Streamlit web application
-- Machine Learning model trained using health indicators
-- SHAP explainability for model interpretation
-- Clean and user-friendly interface
-
-
-📂 Project Structure
-
-glucoseguard-pk/
-│
-├── app/
-│   └── app.py
-│
-├── data/
-│   ├── diabetes_012_health_indicators_BRFSS2015.csv
-│   └── diabetes_binary_5050split_health_indicators_BRFSS2015.csv
-│
-├── models/
-│   ├── glucoseguard_model.pkl
-│   ├── feature_names.pkl
-│   ├── shap_explainer.pkl
-│
-├── notebooks/
-│   ├── 01_eda.ipynb
-│   ├── 02_model.ipynb
-│   └── 03_shap.ipynb
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-🧠 Machine Learning Workflow
-
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Model Training
-- Model Evaluation
-- SHAP Explainability
-- Streamlit Deployment
-
-
-📊 Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- SHAP
-- Joblib
-- Streamlit
-- Matplotlib
-- Seaborn
-
-
-⚙️ Installation
-
-Clone the repository:
-
-bash
-git clone https://github.com/amnaaashraf/glucoseguard-pk.git
-
-
-Go inside the project:
-
-```bash
-cd glucoseguard-pk
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-streamlit run app/app.py
-```
-
- 📈 Model Output
-
-The application predicts whether a patient is:
-
-- Non-Diabetic
-- At Risk of Diabetes
-
-along with the prediction probability.
-
-
-
-📷 Project Screenshots
-
-Add screenshots here after deployment.
-
-Example:
-
-- Home Page
-- Prediction Result
-- SHAP Feature Importance
+> Built for community health workers and NGO screening camps across Pakistan.
 
 ---
+
+## 🌍 The Problem
+
+Pakistan has **33 million diabetics** — the 3rd highest in the world.
+Over **50% remain undiagnosed**.
+Community health workers running rural screening camps have no fast,
+intelligent triage tool. They screen patients manually with no way to
+prioritize who needs urgent referral.
+
+**GlucoseGuard PK changes that.**
+
+---
+
+## 🩺 What It Does
+
+GlucoseGuard PK is a Machine Learning web application that:
+
+- ✅ Predicts diabetes risk instantly from basic health indicators
+- ✅ Shows a risk score (%) with Low / Medium / High classification
+- ✅ Explains the TOP 5 risk drivers using SHAP explainability
+- ✅ Recommends a clear next action (lifestyle advice / retest / refer for HbA1c)
+- ✅ Supports population-level screening summaries for NGO camps
+- ✅ Built for community health workers — no medical expertise required
+
+---
+
+## 📊 Machine Learning Pipeline
+
+| Stage | Details |
+|-------|---------|
+| Dataset | CDC BRFSS 2015 — 80,000+ health records |
+| Models Evaluated | Logistic Regression, Random Forest, XGBoost |
+| Selected Model | Logistic Regression (highest diabetic recall: 76%) |
+| Explainability | SHAP (LinearExplainer) |
+| Class Imbalance | Handled with SMOTE |
+| Deployment | Streamlit Cloud |
+
+### Why Logistic Regression?
+For a health screening tool, **missing a diabetic patient is dangerous**.
+Logistic Regression achieved **76% recall on diabetic cases** vs
+XGBoost's 18% — making it the right choice for triage.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **[Try GlucoseGuard PK Live](https://glucoseguard-pk.streamlit.app)**
+
+---
+
+## 🗂️ Project Structure
+glucoseguard-pk/
+├── app/
+│   └── app.py                  # Streamlit web application
+├── models/
+│   ├── glucoseguard_model.pkl  # Trained ML model
+│   ├── shap_explainer.pkl      # SHAP explainer
+│   └── feature_names.pkl       # Feature names
+├── notebooks/
+│   ├── 01_eda.ipynb            # Exploratory Data Analysis
+│   ├── 02_model.ipynb          # Model training & evaluation
+│   └── 03_shap.ipynb           # SHAP explainability
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Python
+- **ML Libraries:** Scikit-learn, XGBoost, SHAP, Imbalanced-learn
+- **Data:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Deployment:** Streamlit Cloud
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/amnaaashraf/glucoseguard-pk.git
+cd glucoseguard-pk
+pip install -r requirements.txt
+streamlit run app/app.py
+
+⚠️ Disclaimer
+
+This tool is designed for screening support only.
+It does not replace professional clinical diagnosis or medical advice.
 
 👩‍💻 Author
 
-**Amna Ashraf**
-
-GitHub:
-https://github.com/amnaaashraf
-
----
-
-# ⭐ Repository
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+Amna Ashraf
+MSBA Student | Data & Analytics
+GitHub | LinkedIn
