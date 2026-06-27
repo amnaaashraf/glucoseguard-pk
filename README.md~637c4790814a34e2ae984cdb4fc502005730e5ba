@@ -1,22 +1,18 @@
 # 🩺 GlucoseGuard PK
-### AI-Assisted Diabetes Triage & Referral Support System for Pakistan
 
-![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
-![ML](https://img.shields.io/badge/Machine%20Learning-Logistic%20Regression-green)
-![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+## AI-Assisted Diabetes Triage & Referral Support System for Pakistan
 
-> Built for community health workers and NGO screening camps across Pakistan.
+![Python](https://img.shields.io/badge/Python-3.14-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red) ![Status](https://img.shields.io/badge/Status-Live-brightgreen) ![ML](https://img.shields.io/badge/Model-Logistic%20Regression-green)
 
 ---
 
 ## 🌍 The Problem
 
-Pakistan has **33 million diabetics** — the 3rd highest in the world.
-Over **50% remain undiagnosed**.
-Community health workers running rural screening camps have no fast,
-intelligent triage tool. They screen patients manually with no way to
-prioritize who needs urgent referral.
+Pakistan has **33 million diabetics** — the **3rd highest in the world.**
+
+Over **50% remain undiagnosed.**
+
+Community health workers running rural screening camps have no fast intelligent triage tool. They screen hundreds of patients manually with no way to prioritize who needs urgent referral.
 
 **GlucoseGuard PK changes that.**
 
@@ -24,14 +20,15 @@ prioritize who needs urgent referral.
 
 ## 🩺 What It Does
 
-GlucoseGuard PK is a Machine Learning web application that:
+GlucoseGuard PK is a Machine Learning web application designed for community health workers and NGO screening camps across Pakistan.
 
-- ✅ Predicts diabetes risk instantly from basic health indicators
-- ✅ Shows a risk score (%) with Low / Medium / High classification
-- ✅ Explains the TOP 5 risk drivers using SHAP explainability
-- ✅ Recommends a clear next action (lifestyle advice / retest / refer for HbA1c)
-- ✅ Supports population-level screening summaries for NGO camps
-- ✅ Built for community health workers — no medical expertise required
+| Feature | Description |
+|--------|-------------|
+| 🎯 Risk Prediction | Instant diabetes risk score (%) from basic health indicators |
+| 🟢🟡🔴 Risk Classification | Clear Low / Medium / High risk levels |
+| 🔍 SHAP Explainability | Top 5 risk drivers explained in plain language |
+| 📋 Referral Guidance | Lifestyle advice / Retest / Refer for HbA1c |
+| 👥 Population Summary | Camp-level screening insights for NGOs |
 
 ---
 
@@ -41,36 +38,43 @@ GlucoseGuard PK is a Machine Learning web application that:
 |-------|---------|
 | Dataset | CDC BRFSS 2015 — 80,000+ health records |
 | Models Evaluated | Logistic Regression, Random Forest, XGBoost |
-| Selected Model | Logistic Regression (highest diabetic recall: 76%) |
-| Explainability | SHAP (LinearExplainer) |
+| Selected Model | Logistic Regression |
+| Key Metric | Diabetic Recall: **76%** |
 | Class Imbalance | Handled with SMOTE |
+| Explainability | SHAP LinearExplainer |
 | Deployment | Streamlit Cloud |
 
-### Why Logistic Regression?
-For a health screening tool, **missing a diabetic patient is dangerous**.
-Logistic Regression achieved **76% recall on diabetic cases** vs
-XGBoost's 18% — making it the right choice for triage.
+### 🤔 Why Logistic Regression?
+
+For a health screening tool, **missing a diabetic patient is dangerous.**
+
+Logistic Regression achieved **76% recall on diabetic cases** compared to XGBoost's 18% — making it the clinically safer choice for triage support.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **[Try GlucoseGuard PK Live](https://glucoseguard-pk.streamlit.app)**
+### 👉 [Try GlucoseGuard PK Live](https://glucoseguard-pk.streamlit.app)
 
 ---
 
 ## 🗂️ Project Structure
+
 glucoseguard-pk/
-├── app/
-│   └── app.py                  # Streamlit web application
-├── models/
-│   ├── glucoseguard_model.pkl  # Trained ML model
-│   ├── shap_explainer.pkl      # SHAP explainer
-│   └── feature_names.pkl       # Feature names
-├── notebooks/
-│   ├── 01_eda.ipynb            # Exploratory Data Analysis
-│   ├── 02_model.ipynb          # Model training & evaluation
-│   └── 03_shap.ipynb           # SHAP explainability
+│
+├── 📁 app/
+│   └── app.py                    Streamlit web application
+│
+├── 📁 models/
+│   ├── glucoseguard_model.pkl    Trained ML model
+│   ├── shap_explainer.pkl        SHAP explainer object
+│   └── feature_names.pkl         Feature names list
+│
+├── 📁 notebooks/
+│   ├── 01_eda.ipynb              Exploratory Data Analysis
+│   ├── 02_model.ipynb            Model training & evaluation
+│   └── 03_shap.ipynb             SHAP explainability
+│
 ├── requirements.txt
 └── README.md
 
@@ -79,29 +83,41 @@ glucoseguard-pk/
 
 ## 🛠️ Tech Stack
 
-- **Language:** Python
-- **ML Libraries:** Scikit-learn, XGBoost, SHAP, Imbalanced-learn
-- **Data:** Pandas, NumPy
-- **Visualization:** Matplotlib, Seaborn
-- **Deployment:** Streamlit Cloud
+| Category | Tools |
+|----------|-------|
+| Language | Python 3.14 |
+| ML | Scikit-learn, XGBoost, Imbalanced-learn |
+| Explainability | SHAP |
+| Data | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| App & Deployment | Streamlit Cloud |
 
 ---
 
 ## ⚙️ Run Locally
 
 ```bash
+# Clone the repo
 git clone https://github.com/amnaaashraf/glucoseguard-pk.git
+
+# Go into the folder
 cd glucoseguard-pk
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the app
 streamlit run app/app.py
 
 ⚠️ Disclaimer
 
-This tool is designed for screening support only.
+This tool is designed for screening and triage support only.
 It does not replace professional clinical diagnosis or medical advice.
+Always refer high-risk patients to a qualified healthcare professional.
 
 👩‍💻 Author
 
 Amna Ashraf
-MSBA Student | Data & Analytics
-GitHub | LinkedIn
+
+MSBA Student | Data & Analytics Enthusiast
+
