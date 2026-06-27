@@ -1,0 +1,74 @@
+# 🩺 GlucoseGuard PK
+
+<h2>AI-Assisted Diabetes Triage & Referral Support System for Pakistan</h2>
+
+<p>
+<img src="https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge&logo=python"/>
+<img src="https://img.shields.io/badge/Streamlit-Live-red?style=for-the-badge&logo=streamlit"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ML-Logistic%20Regression-orange?style=for-the-badge"/>
+</p>
+
+<br>
+
+> 🇵🇰 Built for community health workers and NGO screening camps across Pakistan.
+
+<br>
+
+---
+
+<h2>🌍 The Problem</h2>
+
+<p>Pakistan has <strong>33 million diabetics</strong> — the <strong>3rd highest in the world.</strong><br>
+Over <strong>50% remain undiagnosed.</strong><br><br>
+Community health workers running rural screening camps have no fast intelligent triage tool.
+They screen hundreds of patients manually with no way to prioritize who needs urgent referral.<br><br>
+<strong>GlucoseGuard PK changes that.</strong></p>
+
+---
+
+<h2>🩺 What It Does</h2>
+
+<table>
+  <tr><th>Feature</th><th>Description</th></tr>
+  <tr><td>🎯 Risk Prediction</td><td>Instant diabetes risk score from basic health indicators</td></tr>
+  <tr><td>🟢🟡🔴 Risk Levels</td><td>Clear Low / Medium / High classification</td></tr>
+  <tr><td>🔍 SHAP Explainability</td><td>Top 5 risk drivers explained in plain language</td></tr>
+  <tr><td>📋 Referral Guidance</td><td>Lifestyle advice / Retest / Refer for HbA1c</td></tr>
+  <tr><td>👥 Population Summary</td><td>Camp-level screening insights for NGO health workers</td></tr>
+</table>
+
+---
+
+<h2>📊 Machine Learning Pipeline</h2>
+
+<table>
+  <tr><th>Stage</th><th>Details</th></tr>
+  <tr><td>Dataset</td><td>CDC BRFSS 2015 — 80,000+ health records</td></tr>
+  <tr><td>Models Evaluated</td><td>Logistic Regression, Random Forest, XGBoost</td></tr>
+  <tr><td>Selected Model</td><td>Logistic Regression</td></tr>
+  <tr><td>Diabetic Recall</td><td><strong>76%</strong></td></tr>
+  <tr><td>ROC-AUC Score</td><td><strong>0.81</strong></td></tr>
+  <tr><td>Class Imbalance</td><td>Handled with SMOTE</td></tr>
+  <tr><td>Explainability</td><td>SHAP LinearExplainer</td></tr>
+  <tr><td>Deployment</td><td>Streamlit Cloud</td></tr>
+</table>
+
+<br>
+
+<h3>🤔 Why Logistic Regression?</h3>
+
+<p>For a health screening tool, <strong>missing a diabetic patient is dangerous.</strong><br><br>
+Logistic Regression achieved <strong>76% recall on diabetic cases</strong> compared to XGBoost's 18% —
+making it the clinically safer and more responsible choice for community triage support.</p>
+
+---
+
+<h2>🚀 Live Demo</h2>
+
+<h3><a href="https://glucoseguard-pk.streamlit.app">👉 Try GlucoseGuard PK Live Here</a></h3>
+
+---
+
+<h2>🗂️ Project Structure</h2>
+
