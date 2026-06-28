@@ -1,10 +1,8 @@
-# 🩺 GlucoseGuard PK
+🩺 GlucoseGuard PK
 
 AI-Assisted Diabetes Triage and Referral Support System for Pakistan
 
----
-
-## 🌍 The Problem
+🌍 The Problem
 
 Pakistan has 33 million diabetics — the 3rd highest in the world.
 Over 50% remain undiagnosed.
@@ -15,9 +13,8 @@ with no way to prioritize who needs urgent referral.
 
 GlucoseGuard PK changes that.
 
----
 
-## 🩺 What It Does
+🩺 What It Does
 
 - 🎯 Predicts diabetes risk instantly from basic health indicators
 - 🟢🟡🔴 Returns Low, Medium, or High risk classification
@@ -25,9 +22,9 @@ GlucoseGuard PK changes that.
 - 📋 Recommends next action — lifestyle advice, retest, or refer for HbA1c
 - 👥 Generates population-level summaries for NGO screening camps
 
----
 
-## 📊 Machine Learning Pipeline
+
+📊 Machine Learning Pipeline
 
 - Dataset — CDC BRFSS 2015 with 80,000+ health records
 - Models Evaluated — Logistic Regression, Random Forest, XGBoost
@@ -38,21 +35,21 @@ GlucoseGuard PK changes that.
 - Explainability — SHAP LinearExplainer
 - Deployment — Streamlit Cloud
 
-### Why Logistic Regression?
+Why Logistic Regression?
 
 For a health screening tool, missing a diabetic patient is dangerous.
 Logistic Regression achieved 76% recall on diabetic cases compared
 to XGBoost's 18% — making it the clinically safer choice for triage.
 
----
 
-## 🚀 Live Demo
+
+🚀 Live Demo
 
 Try the app here — https://glucoseguard-pk.streamlit.app
 
----
 
-## 🗂️ Project Structure
+
+🗂️ Project Structure
 glucoseguard-pk/
 
 │
@@ -86,9 +83,9 @@ glucoseguard-pk/
 ├── requirements.txt
 
 └── README.md
----
 
-## 🛠️ Tech Stack
+
+🛠️ Tech Stack
 
 - Language — Python
 - Machine Learning — Scikit-learn, XGBoost, Imbalanced-learn
@@ -97,9 +94,8 @@ glucoseguard-pk/
 - Visualization — Matplotlib, Seaborn
 - App and Deployment — Streamlit Cloud
 
----
 
-## ⚙️ Run Locally
+⚙️ Run Locally
 
 git clone https://github.com/amnaaashraf/glucoseguard-pk.git
 
@@ -109,15 +105,12 @@ pip install -r requirements.txt
 
 streamlit run app/app.py
 
----
 
-## ⚠️ Disclaimer
+⚠️ Disclaimer
 
 This tool is for screening and triage support only.
 It does not replace professional clinical diagnosis or medical advice.
 Always refer high-risk patients to a qualified healthcare professional.
-
----
 
 ## 👩‍💻 Author
 
