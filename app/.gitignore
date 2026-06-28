@@ -1,4 +1,9 @@
 data/
 *.csv
 __pycache__/
-.ipynb_checkpoints/ 
+.ipynb_checkpoints/
+app.py
+feature_names.pkl
+glucoseguard_model.pkl
+shap_explainer.pkl
+"README.md~637c4790814a34e2ae984cdb4fc502005730e5ba"
