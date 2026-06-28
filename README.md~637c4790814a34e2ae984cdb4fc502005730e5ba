@@ -45,7 +45,7 @@ to XGBoost's 18% — making it the clinically safer choice for triage.
 
 🚀 Live Demo
 
-Try the app here — https://glucoseguard-pk.streamlit.app
+Try the app here — https://glucoseguard-pk-d4caacaegxozkvx9v2dfv9.streamlit.app/
 
 
 
@@ -106,16 +106,16 @@ pip install -r requirements.txt
 streamlit run app/app.py
 
 
+
 ⚠️ Disclaimer
 
 This tool is for screening and triage support only.
 It does not replace professional clinical diagnosis or medical advice.
 Always refer high-risk patients to a qualified healthcare professional.
-
 ## 👩‍💻 Author
 
 Amna Ashraf
 MSBA Student | Data and Analytics | Pakistan
 
 GitHub — https://github.com/amnaaashraf
-LinkedIn — https://linkedin.com/in/YOUR-LINKEDIN-HERE
+LinkedIn — https://www.linkedin.com/in/amna-a-61a15620b
